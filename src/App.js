@@ -1,18 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import Catalog from './Catalog';
+//import Catalog from './Catalog';
+import ProductList from './ProductList';
 
-class App extends Component {
+class Catalog extends React.Component {
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">The Catalog App</h1>
-        </header>
-        <Catalog />
-      </div>
-    );
+    return <div>
+      <h2>Catalog</h2>
+      <ProductList />
+    </div>;
   }
 }
-
-export default App;
+  export default Catalog;
